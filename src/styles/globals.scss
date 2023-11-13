@@ -31,3 +31,9 @@ li{
 .main {
   flex: 1 0 auto; // Для прижатия Футера к низу
 }
+
+.hidden {
+  width: 1px;
+  height: 1px;
+  opacity: 0;
+}
