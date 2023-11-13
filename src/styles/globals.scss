@@ -1,0 +1,33 @@
+@use "./variables" as variable;
+
+html {
+  height: 100%;
+  overflow-y: scroll;  //  чтобы не скакала страница при появлении вертикального скролла
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  color: variable.$color-dark-grey;
+  font-size: 18px;
+  background-color: variable.$color-white;
+  box-sizing: border-box;
+}
+
+body, div, h1, h2,h3,h4,h5, p, ul, li{
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+li{
+  list-style: none;
+}
+
+.main {
+  flex: 1 0 auto; // Для прижатия Футера к низу
+}
