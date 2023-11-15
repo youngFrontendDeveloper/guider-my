@@ -1,18 +1,5 @@
 @use "../../styles/variables" as variable;
 
-.title {
-  font-size: 80px;
-  color: variable.$color-blue;
-}
-
-.subtitle {
-  text-transform: uppercase;
-
-  &--red {
-    color: variable.$color-coral;
-  }
-}
-
 .category {
   display: flex;
   flex-wrap: wrap;

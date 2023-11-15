@@ -38,3 +38,23 @@ li{
   height: 1px;
   opacity: 0;
 }
+
+.container {
+  width: 100%;
+  max-width: variable.$width-xl;
+  margin: 0 auto;
+}
+
+.title {
+  font-size: 80px;
+  color: variable.$color-blue;
+}
+
+.subtitle {
+  text-transform: uppercase;
+
+  &--red {
+    color: variable.$color-coral;
+  }
+}
+

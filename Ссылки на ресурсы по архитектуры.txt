@@ -1,0 +1,17 @@
+Схема -  
+https://github.com/sldk-yuri/realworld-react-fsd/blob/master/dependency-graph-preview.svg
+
+проект на gitHub, с архитектурой fcd  - 
+https://github.com/Shiyan7/kinomore-v2/tree/master/src    
+
+
+Архитектура фронтенда и какой она должна быть -
+https://temofeev.ru/info/articles/arkhitektura-frontenda-i-kakoy-ona-dolzhna-byt/  
+
+
+Как использовать FSD + Next.js | Подключаем Material UI и Настраиваем SSR - 
+https://www.youtube.com/watch?v=_IlEttrYufE
+
+
+
+  

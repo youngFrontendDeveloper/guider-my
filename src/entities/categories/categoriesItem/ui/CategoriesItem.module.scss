@@ -1,4 +1,30 @@
+@use "../../../../styles/variables" as variable;
+
 .category__item {
   display: flex;
   flex-direction: column;
+}
+
+.category__link {
+  width: 350px;
+
+  @media screen and (min-width: variable.$width-md){
+    width: 388px;
+  }
+}
+
+.category__img {
+  display: none;
+
+  @media screen and (min-width: variable.$width-md){
+    display: inline-block;
+  }
+}
+
+.category__img-mb {
+  display: inline-block;
+
+  @media screen and (min-width: variable.$width-md){
+    display: none;
+  }
 }
