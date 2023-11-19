@@ -46,8 +46,14 @@ li{
 }
 
 .title {
-  font-size: 80px;
+  margin-bottom: 12px;
+  //font-family: Celebes;
+  font-size: 140px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 128px;
   color: variable.$color-blue;
+  text-align: center;
 }
 
 .subtitle {

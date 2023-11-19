@@ -4,13 +4,14 @@ import {CategoriesItem} from "@/entities/categories/categoriesItem/ui";
 import {CategoriesType} from "@/types/CategoriesType";
 
 
+
 export async function Categories() {
     const categories: CategoriesType[] = await getCategories();
 
     return (
-        <section className={styles.category}>
+        <section className={styles.categories}>
             {
-                categories.map(item => <CategoriesItem key={item.id} item={item} />)
+                categories.map((item:CategoriesType ) => <CategoriesItem key={item.id} item={item} />)
             }
         </section>
 

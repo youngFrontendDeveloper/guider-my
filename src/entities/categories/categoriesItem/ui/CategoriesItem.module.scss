@@ -1,14 +1,33 @@
 @use "../../../../styles/variables" as variable;
 
-.category__item {
+.category {
+  position: relative;
   display: flex;
   flex-direction: column;
+  box-shadow: 10px 1px 18px 0px rgba(0, 0, 0, 0.08);
+  border-radius: 24px;
+  overflow: hidden;
+  z-index: 10;
+
+  //&::after {
+  //  content: '';
+  //  display: block;
+  //  width: 48px;
+  //  height: 48px;
+  //  border-radius: 100%;
+  //  position: absolute;
+  //  z-index: 5;
+  //  bottom: 100px;
+  //  left: 50%;
+  //  transform: translateX(-50%);
+  //  background-color: variable.$color-dark-blue;
+  //}
 }
 
 .category__link {
   width: 350px;
 
-  @media screen and (min-width: variable.$width-md){
+  @media screen and (min-width: variable.$width-md) {
     width: 388px;
   }
 }
@@ -16,7 +35,7 @@
 .category__img {
   display: none;
 
-  @media screen and (min-width: variable.$width-md){
+  @media screen and (min-width: variable.$width-md) {
     display: inline-block;
   }
 }
@@ -24,7 +43,56 @@
 .category__img-mb {
   display: inline-block;
 
-  @media screen and (min-width: variable.$width-md){
+  @media screen and (min-width: variable.$width-md) {
     display: none;
   }
+}
+
+.category__icon-wrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 48px;
+  height: 48px;
+  border-radius: 100%;
+  position: absolute;
+  z-index: 5;
+  bottom: 100px;
+  left: 50%;
+  transform: translateX(-50%);
+
+}
+
+.category__places{
+  position: absolute;
+  padding: 5px 15px;
+  z-index: 11;
+  top: 26px;
+  right: 24px;
+  color: variable.$color-green;
+  text-align: center;
+  font-size: 16px;
+  letter-spacing: 0.15px;
+  border-radius: 25px;
+  background: variable.$color-white;
+  box-shadow: 0px 4px 18px 0px rgba(7, 60, 73, 0.12);
+}
+
+.category__title{
+  color: variable.$color-dark-grey;
+  text-align: center;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 24px;
+  margin-top: 20px;
+}
+.category__description{
+  color: variable.$color-dark-grey;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 0.15px;
+  margin-top: 12px;
+  margin-bottom: 24px;
 }

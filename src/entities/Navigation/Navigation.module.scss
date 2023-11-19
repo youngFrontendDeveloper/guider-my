@@ -1,0 +1,35 @@
+.nav {
+  display: block;
+  background-color: #E36161;
+}
+
+.menu {
+  display: flex;
+  gap: 10px;
+}
+
+.menu__item {
+ background-color: #1CBDE7;
+  color: beige;
+}
+
+.menu__link {
+   color: sienna;
+
+  &:hover {
+    color: #1CBDE7;
+  }
+
+  &--active {
+    color: green;
+  }
+
+}
+
+.logo{
+  width: 101px;
+  height: 57px;
+  border: 1px solid #5B5B5B;
+}
+
+.burger {}

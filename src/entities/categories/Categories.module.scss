@@ -1,6 +1,10 @@
 @use "../../styles/variables" as variable;
 
-.category {
+.categories {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 38px;
+  margin-bottom: 88px;
 }

@@ -6,10 +6,10 @@ import {CategoriesType} from "@/types/CategoriesType";
 export function CategoriesItem({item}:CategoriesType) {
 
     return (
-        <div className={styles["category__item"]}>
+        <div className={styles["category"]}>
             <Link href={item.href} className={styles["category__link"]}>
                 <Image
-                    srcset={`${item.srcMb2x} 2x`}
+                    srcSet={`${item.srcMb2x} 2x`}
                     src={item.srcMb}
                     width={350}
                     height={264}
@@ -19,17 +19,20 @@ export function CategoriesItem({item}:CategoriesType) {
                 />
                 <Image
                     src={item.src}
-                    srcset={`${item.src2x} 2x`}
+                    srcSet={`${item.src2x} 2x`}
                     width={388}
                     height={344}
                     alt={item.title}
                     className={styles["category__img"]}
                     loading="lazy"
                 />
+                <span style={{backgroundColor: `${item.bgColor}`}} className={styles["category__icon-wrap"]}>
+                    <Image src={item.icon} width={22} height={22} alt={`Иконка ${item.title}`}/>
+                </span>
             </Link>
-            <p>{item.title}</p>
-            <p>{item.description}</p>
-            <span>{item.number} places</span>
+            <p className={styles['category__title']}>{item.title}</p>
+            <p className={styles['category__description']}>{item.description}</p>
+            <span className={styles["category__places"]}>{item.number} places</span>
         </div>
     )
 }

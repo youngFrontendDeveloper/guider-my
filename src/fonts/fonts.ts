@@ -1,14 +1,14 @@
-import {Lusitana, Roboto} from "next/font/google"
+import {Lusitana, Roboto} from "next/font/google";
 
 //  Шрифт основной для всего проекта
-export const roboto = Roboto( {
+export const roboto = Roboto({
     weight: ["400", "500", "700", "900"],
-    subsets: [ "latin", "cyrillic" ],
+    subsets: ["latin", "cyrillic"],
     display: "swap",
-    style: [ "italic", "normal" ],
-    fallback: ['system-ui', 'arial']
+    style: ["italic", "normal"],
+    fallback: ['system-ui', 'arial', "sans-serif"]
 
-} );
+});
 
 //  Шрифт дополнительный для отдельных элементов
 export const lusitana = Lusitana({
@@ -16,5 +16,5 @@ export const lusitana = Lusitana({
     subsets: ["latin"],
     display: "swap",
     style: ["normal"],
-    fallback: ["Times New Roman"],
+    fallback: ['system-ui', "Times New Roman", "serif"],
 });

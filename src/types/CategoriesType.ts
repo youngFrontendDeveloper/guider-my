@@ -8,4 +8,6 @@ export type CategoriesType ={
     title: string;
     description: string;
     number: number;
+    bgColor: string;
+    icon: string;
 }

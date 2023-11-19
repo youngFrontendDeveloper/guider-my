@@ -9,6 +9,8 @@ export const categories = [
         title: "Places to Eat",
         description: "Where to Eat",
         number: 385,
+        bgColor: "#EE6058",
+        icon: "/images/icons/to-eat-icon.svg"
     },
     {
         id: 2,
@@ -20,6 +22,8 @@ export const categories = [
         title: "Places to Explore",
         description: "Where to Go",
         number: 163,
+        bgColor: "#2384BC",
+        icon: "/images/icons/to-explore-icon.svg"
     },
     {
         id: 3,
@@ -31,5 +35,7 @@ export const categories = [
         title: "Services",
         description: "Where to Buy/Fix",
         number: 467,
+        bgColor: "#00959C",
+        icon: "/images/icons/to-services-icon.svg"
     },
 ]
